@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sinscrire</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="static/inscr.css">
+
+</head>
+<body>
+    {% block content %}
+    <div class="hero">
+        <nav>
+            <h2 class="logo"> Merveilles web</h2>
+            <ul>
+                <li><a href="#">Apropos</a></li>
+                <li><a href="{{url_for('Connect')}}">Se Connecter</a></li>
+                <li><a href="{{url_for('index')}}">Retour</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="momi">
+        <form action="/inscrire" method="post">
+            <h1>S'inscrire</h1><br><br>
+
+            <input type="text" class="mir1" placeholder="Nom" name="nom" required><br><br>
+            <input type="text" class="mir1" placeholder="Prenom" name="prenom" required><br><br>
+            <input type="email" class="mir1" placeholder="Email" name="email" required><br><br>
+            <input type="password" class="mir1" placeholder="Mot de passe" name="passe" required><br><br>
+            <input type="password" class="mir1" placeholder="Confirmation du mot de passe" name="passeconf" required><br><br> 
+            <input type="submit" value="Soumettre">     
+        </form>
+    </div>
+    <br><br>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div>
+            {{messages[0]}}
+        </div>
+    {% endif %} 
+    {% endwith %}
+    {% endblock%}
+</body>
+</html>

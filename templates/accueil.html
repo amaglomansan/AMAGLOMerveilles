@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Accueil</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static', filename='inscr.css')}}">
+</head>
+<body>
+    {% block content %}
+    <header>
+    <div class="hero">
+        <nav>
+            <h2 class="logo"> Merveilles web</h2>
+            <ul>
+                <li><a href="#">Apropos</a></li>
+                <li><a href="{{url_for('Connect')}}">Se Connecter</a></li>
+                <li><a href="{{url_for('Inscrire')}}">S'inscrire</a></li>
+            </ul>
+        </nav>
+        <h1 class="animetext">Bienvenu sur Merveilles web </h1>
+    </div>
+</header>
+     {% endblock %}
+</body>
+</html>

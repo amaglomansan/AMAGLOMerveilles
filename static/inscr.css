@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(185, 151, 151);
+}
+form{
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 20px aliceblue;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+input{
+    border: 2px solid white;
+    border-radius: 8px;
+    border-color: white;
+    color: rgb(109, 7, 7);
+}
+.momi{
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+    margin-top: 200xp;
+}
+p{
+    text-align: center;
+}
+.hero{
+    height: 100xp;
+    width: 100xp;
+    background-color: rgb(236, 161, 161) ;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    width: 20xp;
+    height: 10xp;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10xp;
+    padding-right: 10xp; 
+}
+
+.logo{
+    color: white;
+    font-size: 28xp;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10xp 20xp;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul li a:hover{
+    color: rgb(201, 103, 103);
+    
+}
+
+
+h4{
+    text-align: center;
+}
+a{
+    text-align: center;
+}
+img{
+    align-content: center;
+    text-align: center;
+}
+input[submit]{
+    border: 2px solid white;
+    border-radius: 8px;
+    border-color: white;
+    color: rgb(109, 7, 7);
+}
+
+.animetext{
+    margin-top: 250px;
+    animation:animation-text 2s ease-in-out infinite;
+    font-size: 50xp;
+    text-align: center;
+}
+
+@keyframes animation-text {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+h1{
+    text-align: center;
+}
+
+.maj{
+    width: 100px;
+    height: auto;
+    margin-left: 720px;
+    margin-top: 100px;
+    text-align: center;
+}
+.rim{
+   margin-left: 500px;
+   border-radius: 5px;
+}
+.flash{
+    text-size-adjust: 20px;
+}
